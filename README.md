@@ -124,5 +124,5 @@ Data-Warehouse/
 **Eng. Abo Obaida Nabil**  
 *Communications & Electronics Engineering Student | Data Engineering Enthusiast*
 
-* 🔗 **LinkedIn:** [Add Your LinkedIn URL Here]
-* 💻 **GitHub:** [Add Your GitHub Profile URL Here]
+* 🔗 **LinkedIn:** [[Add Your LinkedIn URL Here](https://www.linkedin.com/in/abo-obaida-nabil-mohamed/)]
+* 💻 **GitHub:** [[Add Your GitHub Profile URL Here](https://github.com/Abobaida)]
