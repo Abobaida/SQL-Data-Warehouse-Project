@@ -121,8 +121,8 @@ Data-Warehouse/
 
 ## 👨‍💻 Author
 
-**Eng. Abo Obaida Nabil**  
+**Eng. Abo Obaida Nabil Mohamed**  
 *Communications & Electronics Engineering Student | Data Engineering Enthusiast*
 
-* 🔗 **LinkedIn:** [(https://www.linkedin.com/in/abo-obaida-nabil-mohamed/)]
-* 💻 **GitHub:** [[Add Your GitHub Profile URL Here](https://github.com/Abobaida)]
+[![LinkedIn](https://img.shields.io/badge/Abo%20Obaida%20Nabil%20Mohamed-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abo-obaida-nabil-mohamed/)
+[![GitHub](https://img.shields.io/badge/Abobaida-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abobaida)
