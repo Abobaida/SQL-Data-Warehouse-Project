@@ -205,6 +205,3 @@ For deeper technical specifications, refer to the documentation inside the [`doc
 
 [![LinkedIn](https://img.shields.io/badge/Abo%20Obaida%20Nabil%20Mohamed-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abo-obaida-nabil-mohamed/)
 [![GitHub](https://img.shields.io/badge/Abobaida-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abobaida)
-
-* <img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg)" width="18" height="18" align="absmiddle" /> **LinkedIn:** [Abo Obaida Nabil Mohamed](https://www.linkedin.com/in/abo-obaida-nabil-mohamed/)
-* <img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg)" width="18" height="18" align="absmiddle" /> **GitHub:** [Abobaida](https://github.com/Abobaida)
