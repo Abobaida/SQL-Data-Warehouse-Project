@@ -111,7 +111,7 @@ Dedicated SQL test suites in the [`test/`](test/) directory verify pipeline inte
 
 ## 📂 Repository Folder Structure
 
-```text
+~~~text
 SQL-Data-Warehouse-Project/
 │
 ├── Data Sets/                          # Raw source CSV datasets
@@ -154,3 +154,57 @@ SQL-Data-Warehouse-Project/
 ├── .gitattributes
 ├── LICENSE
 └── README.md                           # Project Documentation
+~~~
+
+---
+
+## 🚀 How to Run This Project
+
+### Prerequisites
+* **Microsoft SQL Server** (Express, Developer, or Enterprise Edition)
+* **SQL Server Management Studio (SSMS)** or **Azure Data Studio**
+
+### Step-by-Step Execution
+1. **Clone the Repository:**
+   ~~~bash
+   git clone https://github.com/Abobaida/SQL-Data-Warehouse-Project.git
+   ~~~
+2. **Initialize the Database & Schemas:**
+   * Open `Scripts/Initialize_DataBase.sql` in SSMS and execute it to create the `Data_Ware_House` database along with the `Bronze`, `Silver`, and `Gold` schemas.
+3. **Build and Load the Bronze Layer:**
+   * Execute `Scripts/Bronze/DDL_Bronze.sql` to create the 6 raw staging tables.
+   * Open `Scripts/Bronze/Load Bronze Layer.sql`, update the local file paths in the `BULK INSERT` statements to point to your local `Data Sets/` directory, compile the procedure, and run:
+     ~~~sql
+     EXEC bronze.load_bronze;
+     ~~~
+4. **Build, Load, and Validate the Silver Layer:**
+   * Execute `Scripts/Silver/DDL_Silver.sql` to create the cleansed Silver tables.
+   * Compile `Scripts/Silver/Load Silver Layer.sql` and run the transformation pipeline:
+     ~~~sql
+     EXEC silver.load_silver;
+     ~~~
+   * Run `test/quality_checks_silver.sql` to confirm zero data quality discrepancies.
+5. **Create and Validate the Gold Layer Views:**
+   * Execute `Scripts/Gold/DDL_Gold.sql` to create `gold.dim_customers`, `gold.dim_products`, and `gold.fact_sales`.
+   * Run `test/quality_checks_gold.sql` to verify Star Schema referential integrity.
+
+---
+
+## 📖 Project Documentation
+
+For deeper technical specifications, refer to the documentation inside the [`docs/`](docs/) directory:
+* 📘 **[Gold Layer Data Catalog (`docs/data_catalog.md`)](docs/data_catalog.md):** Full data dictionary detailing every view, column, data type, grain, and business rule.
+* 📏 **[Naming Conventions (`docs/naming_conventions.md`)](docs/naming_conventions.md):** Standards governing schemas, tables, views, surrogate keys, and stored procedures.
+
+---
+
+## 👨‍💻 Author
+
+**Abo Obaida Nabil Mohamed**  
+*Communications & Electronics Engineering Student | Data Engineering Enthusiast*
+
+[![LinkedIn](https://img.shields.io/badge/Abo%20Obaida%20Nabil%20Mohamed-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abo-obaida-nabil-mohamed/)
+[![GitHub](https://img.shields.io/badge/Abobaida-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abobaida)
+
+* <img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg)" width="18" height="18" align="absmiddle" /> **LinkedIn:** [Abo Obaida Nabil Mohamed](https://www.linkedin.com/in/abo-obaida-nabil-mohamed/)
+* <img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg)" width="18" height="18" align="absmiddle" /> **GitHub:** [Abobaida](https://github.com/Abobaida)
